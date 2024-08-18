@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncias empresas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Denúncias</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Motivos Prévios</a></li>
+                <li><a href="#contact">Contato com Gestor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bem-vindos à área de denúncias da nossa empresa.</h2>
+            <p>Apenas preencha para sabermos quem é você e o motivo!</p>
+        </section>
+        <!-- Mais seções -->
+        <section>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">RE ou ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="motivo">Motivo:</label>
+                    <textarea id="motivo" name="motivo" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fileUpload" class="file-label">Anexo para envio de imagem ou arquivo:</label>
+                    <input type="file" id="fileUpload" name="file" accept="image/*, .pdf, .doc, .docx">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="success-message" style="display: none; color: rgb(54, 211, 23); margin-top: 1rem;">
+                Denúncia enviada com sucesso. Obrigado por nos contatar!
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
